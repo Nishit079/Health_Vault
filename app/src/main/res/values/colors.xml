@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="background">#07111F</color>
+    <color name="card">#101D2D</color>
+    <color name="card_border">#1E354B</color>
+    <color name="search_background">#0D1928</color>
+    <color name="chip">#16283A</color>
+
+    <color name="primary">#18C6B8</color>
+    <color name="secondary">#4DA3FF</color>
+
+    <color name="vault_start">#087F78</color>
+    <color name="vault_end">#165EA8</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_muted">#8FA3B8</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>
