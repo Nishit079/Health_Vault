@@ -155,56 +155,6 @@ User Action → Fragment → ViewModel → Repository → DAO → Room DB
 | **UI Components** | RecyclerView, CardView, ConstraintLayout |
 | **Build System** | Gradle (Kotlin DSL) |
 
----
-
-## 📂 Project Structure
-
-```
-Health_Vault/
-├── app/src/main/
-│   ├── java/com/example/healthvault/
-│   │   ├── MainActivity.kt                          # Entry point, navigation host
-│   │   │
-│   │   ├── model/
-│   │   │   └── HealthRecord.kt                      # Domain model
-│   │   │
-│   │   ├── data/
-│   │   │   ├── local/
-│   │   │   │   ├── HealthVaultDatabase.kt            # Room DB (Version 3, with migrations)
-│   │   │   │   ├── HealthRecordEntity.kt             # Health record table entity
-│   │   │   │   ├── HealthRecordDao.kt                # CRUD operations for records
-│   │   │   │   ├── EmergencyProfileEntity.kt         # Emergency profile table entity
-│   │   │   │   └── EmergencyProfileDao.kt            # CRUD for emergency data
-│   │   │   │
-│   │   │   └── repository/
-│   │   │       └── HealthRecordRepository.kt         # Single source of truth
-│   │   │
-│   │   └── ui/
-│   │       ├── HealthRecordViewModelFactory.kt       # ViewModel factory
-│   │       ├── home/
-│   │       │   └── HomeFragment.kt                   # Dashboard with vault summary
-│   │       ├── vault/
-│   │       │   ├── VaultFragment.kt                  # Record list, search, share center
-│   │       │   ├── RecordListViewModel.kt            # Record management ViewModel
-│   │       │   └── RecordAdapter.kt                  # RecyclerView adapter
-│   │       ├── detail/                               # Record detail view
-│   │       ├── insights/
-│   │       │   └── InsightsFragment.kt               # Analytics & trends
-│   │       ├── settings/
-│   │       │   └── SettingsFragment.kt               # PIN & emergency profile access
-│   │       └── emergency/
-│   │           ├── EmergencyProfileFragment.kt       # Medical ID editor
-│   │           ├── EmergencyProfileViewModel.kt      # Emergency data ViewModel
-│   │           └── EmergencyProfileViewModelFactory.kt
-│   │
-│   └── res/                                          # Layouts, drawables, navigation graphs
-│
-├── Screenshots/                                      # App screenshots
-├── build.gradle.kts                                  # Root build config
-└── app/build.gradle.kts                              # App-level dependencies
-```
-
----
 
 ## 🧩 Challenges Faced & Solutions
 
